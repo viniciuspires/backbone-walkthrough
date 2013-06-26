@@ -155,3 +155,7 @@ var People = Backbone.Collection.extend({
     model:Person
 });
 
+var dude = new Person();
+
+dude.set('name', 'Dr. Who?');
+dude.set('age', 42);
