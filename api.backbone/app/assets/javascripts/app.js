@@ -152,6 +152,7 @@ var People = Backbone.Collection.extend({
             console.log('People Event: ' + e );
         });
     },
+    url:'/people',
     model:Person
 });
 
@@ -159,3 +160,6 @@ var dude = new Person();
 
 dude.set('name', 'Dr. Who?');
 dude.set('age', 42);
+
+
+console.log( new People().fetch() );
